@@ -1,0 +1,20 @@
+<h1>Ejercicio uno</h1>
+<label for="">Numero uno:</label>
+<input type="number" [(ngModel)]="numeroUno.valor">
+<label for="">Numero dos:</label>
+<input type="number" [(ngModel)]="numeroDos.valor">
+<hr>
+<input type="button" value="Calcular" (click)="calcular()">
+<input type="button" value="Limpiar" (click)="limpiar()">
+<hr>
+<div *ngIf="promedio.valor">
+
+    <label for="">Promedio:</label>
+    <input type="number"  [(ngModel)]="promedio.valor">
+</div>
+
+<div *ngIf="suma.valor">
+
+    <label for="">Suma:</label>
+    <input type="number"  [(ngModel)]="suma.valor">
+</div>
